@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html>
+<head><title>Projeler</title>
+	<link rel="stylesheet" type="text/css"  href="css/websayfam.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+</head>
+
+
+<body>
+	<div id="social">
+	
+	<font >FELICITA  | <span>vazgeçmeyi düşündüğünde neden başladığını hatırla..</span></font>
+	
+	<a class="al" href="index.html" ><i class="fas fa-search"></i></a>
+	<a  class="al" href="https://www.instagram.com/?hl=tr"><i class="fab fa-instagram"></i></a>
+	<a class="al" href="C:/Users/User/Desktop/HTML5/websayfam.html" ><i class="fab fa-facebook"></i></a>
+	<a class="al" href="https://www.google.com.tr/"><i class="fab fa-google"></i></a>
+	
+	
+	</div>
+	
+	<div id="container">
+		<header>
+			<img id="headerimg"  src="img/yapay.jpg" alt="yapayzeka">
+			<div id="centered" >PAYLAŞTIKÇA </div>
+		</header>
+			
+		
+		<section>
+			<nav>
+			
+				<ul>
+					<li><a href="index.html" ><i class="fas fa-home"></i>Ana Sayfa</a></li>
+					
+					<li><a href="projeler.html"  ><i class="fas fa-asterisk"></i>projeler</a></li>
+					<details>
+					<summary class="sum"><i class="fas fa-images"></i><a id="ilgi"  href="#"  >İlgi Alanlarım</a></summary>
+					
+						<ul>
+							<li><a href="felsefe.html">Felsefe</a></li>
+							<li><a href="fizik.html">Bilim tarihi</a></li>
+						</ul>
+					
+					</details>
+					<li id="bordertop"><a href="iletisim.html" target="_blank"><i class="fas fa-address-book"></i>İletişim</a></li>
+				
+				</ul>
+			
+			
+			</nav>
+			
+			<main >
+				<h3 class="projeler">PROJELER</h3><br />
+				
+				
+				<p class="text"><br />
+				Aşağıda yaptığım bazı projeleri paylaştım sizde bunları deneyip farklı projelerinizde kullanabilirsiniz.
+				Tabi daha iyi anlaya bilmeniz için verdiğim kodun  her komutunun ne iş gördüğünü anlamanız gerekiyor. Özellikle de import edilen kütüphanelere bakmalısınız.
+				
+				</p><br />
+				<h1 class="text" >Python Görüntü İşlemeyle Otonom Araç Yapımı</h1><br />
+				<p class="text">
+				Bir arabanın, otonom araç olabilmesi için, aracın kamera görüntüleri ile görüntü işleme
+				yöntemlerini kullanarak şerit takibi, tabela tanımlama,trafik ışıklarını algılama vb. işlemleri yapabiliyor  olmalı.
+				Aracımız şerit takibi yaparken sağ şerit ile sol şeridin eğimi pozitif ve negatif değerler
+				aldığından aracımız şeritleri böyle tanımaktadır. Aracımız her iki şeridi algıladığın da
+				araç düz ilerleyecektir. Eğer şeritlerin her ikisinin de eğimleri negatif eğimli ise araç
+				sağa dönecektir. Eğer pozitif eğimli ise de aracımız sola dönecektir.
+				Aracımız şerit takibi yaparken mesafe sensörü engel algılamaktadır. Böylece tabela
+				algılama daha kolay olmaktadır. Çünkü aracımızın şerit
+				takibi yaparken önünde bir cisim belli bir mesafede algılanınca duracaktır. Tabela
+				algılama daha da kolay olmaktadır. Aracımız
+				durgun halde iken raspberry pi görüntü işlemede daha iyi sonuçlar vermiştir.
+				Aracımız tabela algılamada mavi renklidir. Mavi renkli bir yüzeyi tarayıp alan sınırları
+				algılanmaktadır. Alan sınırları algılandıktan sonra mavi yüzeyin içinde bulunan işareti
+				bazı kabuller yapılarak matematiksel yöntemlerle ele alınıp, tabelanın sağa dönmek,
+				sola dönmek, ileri gitmek, geri dönme algılanma yapılmaktadır. Tabela algılandıktan
+				sonra şerit seçimi yapmaktadır. Böylece aracımız tabela algılanıp, istenilen şeritte
+				döndürüldükten sonra araç normal şerit takibine devam edebilecektir. <br />
+				
+				Bitirme tezi olarak yaptığım bu projenin videosunu da kısa sürede yükleyeceğim. Kodlara ve yararlandığım kaynaklar github hesabımdan ulaşabilirsiniz.
+
+				</p>
+				
+				<h4 class="text">KULLANILAN MALZEMELER</h4>
+				<ul class="text">
+				<h4><li>HC-SR04 Ultrasonik Mesafe Sensörü </li></h4>
+				<h4><li>Raspberry pi 3 model B+ </li></h4>
+				<h4><li>L298 motor sürücü </li></h4>
+				<h4><li>RC araba </li></h4>
+				<h4><li>Yedek şarjlı </li></h4>
+				<h4><li>Raspberry pi kamera modülü </li></h4>
+				<h4><li>Powerbank</li></h4>
+				<h4><li>DC motor</li></h4>
+				</ul>
+				<h4 class="text">Otonom Araç İçin Görüntü İşleme</h4>
+
+				<p class="text">
+				Otonom aracın şerit takibi yapabilmesi için görüntünün sadece istenilen bölümü
+				işlemek büyük fayda sağlamıştır. Bunu raspberry pi’de python ve OpenCV kütüpanesi
+				kullanılarak yapılabilir. Kameranın görüntüsü (320,240) boyutlarında görüntü
+				almaktayız. Raspberry pi’de küçük boyutlarda görüntü işlemek, işlemcinin görüntü
+				kaçırmadan karar vermesini sağlanır. Aracın mesafe sensörü ile belli bir mesafede
+				engel ile karşılaşıldığında aracımız durmaktadır.
+				Böylece araç durgun halde iken görüntünün daha iyi işleneceğinden dolayı aracın verdiği kararlarda daha doğru  sonuçlara ulaşılıştır.</p>
+
+				<h4 class="text">Şerit tespit edilmesi</h4>
+
+				<p class="text">
+				Kameradan algılanan ilk görüntüleri şerit tesbitlerini yapabilmek için görüntü işleme
+				yöntemlerini kullanacağız. Bu işlemler için renk filtreleme yapılarak şerit imgesi
+				oluştururuz. Oluşan bu imgenin daha doğru kararlar almamızı sağlamaktadır. Görüntü
+				işleme sonucu şerit çizgileri elde ettik. Şerit çizgilerinin algılamada işleminden sonra
+				çizgilerin eğimlerinden faydalanarak sağ şerit sol şerit algılama gerçekleşmiştir.</p>
+
+				<h4>Kullanılan yöntemler</h4>
+				<ul>
+				<li><h4> Gri Ton Dönüşümü :</h4> <pre>imgGrayscale=cv2.cvtColor(frame,cv2.COLOR_BGR2GRAY) </pre></li>
+				<li> <h4>Beyaz Rengin Maskelenmesi: </h4><pre>imgBlurred = cv2.Blur(imgGrayscale,(5,5),0) </pre></li>
+				<li> <h4>Gauss Filtresi:  </h4><pre>imgBlurred = cv2.GaussianBlur(imgGrayscale,(5,5),0</pre></li>
+				<li> <h4>Canny Kenar Bulma : </h4> <pre>imgCanny=cv2.Canny(imgBlurred,0,255)  </pre></li>
+				<li> <h4>İstenilen Alan : </h4> <pre>vertices =np.array([[(15,240),(95,140),(225,140),(305,240)]],np.int32)  </pre></li>
+				
+				<li> <h4>Hough Dönüşümü ile Doğru Tespiti</li>
+				
+</ul>
+<br /><br />
+			<h4>Tasarım Kısmı</h4>
+			<div class="refrans">
+				<img  class="poster" src="img/sema.png"   alt="poster" />
+			</div>
+			 
+			 <div class="refrans">
+				<img   class="poster"  src="img/arac.jpg"  alt="poster" />
+			 </div>
+			
+			<img    src="img/poster.PNG"  alt="poster" />
+			<br /><br /><br /><br /><br /><br />
+
+				<h1 class="text" >Python OpenCV ile Görünmezlik Pelerini Yapımı</h1><br />
+				<pre>
+				import cv2
+				import numpy as np
+
+
+				cam=cv2.VideoCapture(0)
+
+				_,backgraund= cam.read()
+
+
+				lower=np.array([92,124,136])
+				upper=np.array([110,242,255])
+
+
+
+
+				kernel=np.ones((3,3),np.uint8)
+				kernel2=np.ones((11,11),np.uint8)
+				kernel3=np.ones((3,3),np.uint8)
+
+
+
+
+				while cam.isOpened():
+					_,frame=cam.read()
+					
+					
+					hsv= cv2.cvtColor(frame,cv2.COLOR_BGR2HSV)
+					
+					mask= cv2.inRange(hsv,lower,upper)
+					
+					mask=cv2.morphologyEx(mask,cv2.MORPH_CLOSE,kernel)
+					mask=cv2.morphologyEx(mask,cv2.MORPH_OPEN,kernel2)
+					mask=cv2.dilate(mask,kernel3,iterations=1)
+				   
+					
+				   
+					
+					mask_not=cv2.bitwise_not(mask)
+					
+					bg= cv2.bitwise_and(backgraund,backgraund,mask=mask)
+					fg= cv2.bitwise_and(frame,frame,mask=mask_not)
+					
+					dst=cv2.addWeighted(bg,1,fg,1,0)
+					
+					
+					
+					
+					#dst=np.hstack((frame,dst))
+					
+					
+					cv2.imshow("original",frame)
+					cv2.imshow("mask",mask)
+					cv2.imshow("dest",dst)
+					
+					
+					
+					if cv2.waitKey(1) & 0xff == ord("q"):
+						print("görüntü kapandı")
+						break
+
+
+				cam.release()
+				cv2.destroyAllWindows()
+				
+				</pre>
+				<video controls width="800" height="450px"   loop>
+				
+					<source src="img/projeler.mp4" type="video/mp4"></source>
+				</video>
+				<h1 class="text" >Pythonla Sesli Asistan Yapımı</h1><br />
+				<p class="text">Öncelikle import edilen  kütüphaneleri yüklemiş olmanız gerekiyor. Python kütüphanelerini pypi.org sitesinden modülün ismini yazarak yükleyebilirsiniz. Kütüphaneler yüklü değilse 
+			    pypi.org sitesine gitmek için <a href="https://pypi.org/" id="pypi"> tıklayın...</a>
+				İstediklerinizi söyletebilir ve aratabilirsiniz. Ben interette arama yapan youtuba bağlanan saati söyleyen vb. komutları yapan sesli cevap döndüren bir sesli asistan yaptım. Bunu bir robot projesinde kullanmıştım sizde kodlarda oynama yaparak 
+				istediğiz şekilde daha gelişmiş projeler yapabilirsiniz :)
+ 			
+			
+			</p>
+				<pre>
+			
+			"""
+			Created on Tue Dec 15 13:04:00 2020
+
+			@author: Atik
+			"""
+
+			import speech_recognition as sr
+			from datetime import  datetime 
+			import time
+			from selenium import webdriver
+			from gtts import gTTS
+			from playsound import playsound
+			import random 
+			import  os
+			from selenium import webdriver
+			import time
+			from selenium.webdriver.common.keys import Keys
+
+
+			
+
+			def ara():
+				driver=webdriver.Chrome()
+				url="https://www.youtube.com/results?search_query=mihriban "
+				driver.get(url)
+				result=driver.find_element_by_xpath("/html/body/ytd-app/div/ytd-page-manager/ytd-search/div[1]/ytd-two-column-search-results-renderer/div/ytd-section-list-renderer/div[2]/ytd-item-section-renderer/div[3]/ytd-video-renderer[1]/div[1]/div/div[1]/div/h3/a/yt-formatted-string")
+
+				result.click()
+
+			def speak(string):
+				tts=gTTS(string,lang="tr")
+				rand=random.randint(1, 10000)
+				
+				file="audio-"+str(rand)+".mp3"
+				tts.save(file)
+				playsound(file)
+				os.remove(file)
+				
+
+
+
+			r=sr.Recognizer()
+			mic=sr.Microphone()
+
+
+			def record(ask=False):
+				with mic as m:
+					
+				   
+					if ask:
+						speak(ask)
+						
+						
+					audio=r.listen(m)
+					text=""
+					
+					try:
+						
+					   text=r.recognize_google(audio,language="tr-TR").lower()
+					   
+					except sr.UnknownValueError:
+						speak("seni anlayamadım")
+					except sr.RequestError:
+						speak("sistem çalişmıyor")
+				
+					return text
+				
+
+			def response(text):
+				
+				if "nasılsın" in text:
+					speak("iyi seni sormalı mihri")
+					
+				if "beşiktaş" in text:
+					speak("çok yaşa beşiktaş en sevdiğim takım")
+				if "özür dilerim " in text:
+					speak("bilemedim affedim mi")
+				if "saat kaç" in text:
+					speak(datetime.now().strftime("%H:%M:%S"))
+					
+				if "mihriban şarkısı" in text:
+					speak(" yeterki sen iste bende tam açıcaktım")
+					ara()
+					
+				   
+				   
+				if "tamamdır" in text:
+					speak("görüşürüz")
+					
+					
+					
+				
+					
+				
+				
+				
+			#speak("nasıl yardımcı olabilirim")
+
+
+
+			while True:
+				
+				text=record()
+				
+				response(text)
+    
+        
+        </pre>
+        <p>
+		Öncelikle selenium ,request, gTTS modüllerini kısaca açıklamak gerekirse;
+		Selenium, bilgisayarınıza yükleyeceğiniz bir driver yardımı ile ekrana chrome, firefox gibi bir tarayıcı açarak, gerçek bir insan gibi istediğiniz tüm işlemleri programlama dili yardımıyla çalıştırmanızı sağlayan bir araçtır. Siz bir tarayıcı açtığınızda bir web sitesine bağlanıp belirli alanlara tıklayarak geziniyor, bazı formları dolduruyor veya butonlara tıkladığınızda bazı yerlerin ekrana gelmesini bekliyorsunuz. İşte tüm bu aksiyonları, sizin yerinize python kodları yardımı ile yapan bir üründür. <br /> <br />
+		Request modülü ise  web üzerindeki isteklerinizi kolaylıkla yönetebilirsiniz. Bu modül ile API endpointlerine GET, POST, PUT ve DELETE gibi HTTP isteklerini gönderebilirsiniz. <br /><br />
+		gTTS (google Text To Speech) modülü ise Google tarafından geliştirilen metinlerin seslere dönüştürmesine yardımcı olan bir  kütüphanedir.İçerisinde birçok dil barındıran bu kütüphane desteklenen dillerin otomatik algılamaktadı<br/> <br />
+		Aslında amacım eğitim vermekten çok yaptıklarımı paylaşmak size kaynak olabilmesi açısından kolay gelsin:)</p>
+		
+		
+        <p><h4>
+		Selenium ve Request modulünün kullanımı ile ilgili yazdığım örnek kodlar inceleye bilirsiniz.</h4></p>
+		<pre>
+	from selenium import webdriver
+	import time
+	from selenium.webdriver.common.keys import Keys  # enter veye ab gibi tusları kullanmak için
+
+
+	url="https://github.com/"
+
+	driver=webdriver.Chrome()
+	driver.get(url)
+
+	#searchInput=driver.find_element_by_name("q") #sayfada arama kısmına ulasmak istedim selenum find.. metodunu kullak aldım (sayfa kaynagını incele)
+	searchInput=driver.find_element_by_xpath("//*[@id='app']/main/section/div[1]/section[2]/div") #ikinci yöntem
+
+	time.sleep(1)
+
+
+	searchInput.send_keys("python") #Arama kısmanına anhtar kelimeyi yazacak
+	time.sleep(2)
+
+	searchInput.send_keys(Keys.ENTER) #ENTER tusuna bassın dedim
+	time.sleep(2)
+
+	result=driver.page_source #tüm kaynak kodunu aldım
+	"""
+	result=driver.find_elements_by_css_selector(".repo-list-item h3 a ") #pythonatıklatınca gelen tüm bilgileri liste 
+	olarak aldım for ile kullanıcam
+
+
+	for element in  result:
+		print(element.text)#butun a etiketlerinin tektini aldık
+
+	"""
+	print(result)
+	driver.close()
+	</pre>
+	
+	<p ><h4>Request Modülü</h4></p>
+     <pre>
+	import requests
+	import json
+
+	bozulan_kur=input ("bozulan döviz kuru: ")
+	alınan_kur=input("alinan döviz kuru:")
+	miktar=int(input(f"ne kadar {bozulan_kur} bozdurmak istiyorsunuz:"))
+
+	doviz_url="https://api.exchangeratesapi.io/latest?base="
+
+	result=requests.get(doviz_url+bozulan_kur)
+	result=json.loads(result.text)
+	print(f"1 {bozulan_kur}=:",result["rates"][alınan_kur],alınan_kur)
+	print(f"{miktar} USD=",miktar*(result["rates"]["TRY"]),alınan_kur)
+	</pre>
+        
+        
+				
+				
+			</main>
+	
+		</section>
+		
+		
+		
+		
+		<footer>tüm haklar saklıdır &copy; | 2020</footer>
+	
+	
+	
+	
+	</div>
+</body>
+</html>
